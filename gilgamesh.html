@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>THE STONE KING</title>
+        <meta name="the stone king" content="on becoming clay">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!-- <p id = "title">THE STONE KING</p> -->
+        <div id="stone" onclick="stone()">
+            <div id= "stoneLine1">I &emsp; STONE</div>
+            <div id= "stoneLine2"> </div>
+            <div id= "stoneLine3"> </div>
+            <div id= "stoneLine4"> </div>
+            <div id= "stoneLine5"> </div>
+            <div id= "stoneLine6"> </div>
+            <div id= "stoneLine7"> </div>
+        </div>
+        <div id="clay" onclick ="clay()">
+            <div id = "clayLine1">II &emsp; CLAY</div>
+            <div id = "clayLine2"> </div>
+            <div id = "clayLine3"> </div>
+            <div id = "clayLine4"> </div>
+            <div id = "clayLine5"> </div>
+            <div id = "clayLine6"> </div>
+            <div id = "clayLine7"> </div>
+            <div id = "clayLine8"> </div>
+            <div id = "clayLine9"> </div>
+            <div id = "clayLine10"> </div>
+            <div id = "clayLine11"> </div>
+            <div id = "clayLine12"> </div>
+            <div id = "clayLine13"> </div>
+            <div id = "clayLine14"> </div>
+        </div>
+        <div id="blood" onclick ="blood()">
+            <div id = "bloodLine1">III &emsp; BLOOD</div>
+        </div>
+        <div id="cedar" onclick ="cedar()">
+            <div id = "cedarLine1">IV &emsp; CEDAR</div>
+        </div>
+        <div id="night" onclick ="night()">
+            <div id = "nightLine1">V &emsp; NIGHT</div>
+        </div>
+        <div id="storm" onclick ="storm()">
+            <div id = "stormLine1">VI &emsp; STORM</div>
+        </div>
+        
+        <audio id="stoneAudio" src="openingtitle.mp3"></audio>
+        <audio id="clayAudio" src="cosmicshore.mp3"></audio>
+        <audio id="bloodAudio" src="talesofthefuture.mp3"></audio>
+	
+	<style>
+		body {
+		  background-image: url('./background3.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		}
+		
+        #stone {
+            color: white;
+            position: absolute;
+            top: 5%;
+            left: 20%;
+			text-align: left;
+            font-family: Andale Mono, monospace;
+            font-size: 0.8em;
+        }
+        
+		#stoneLine1 {
+            color: white;
+			text-align: left;
+		}
+        
+        #stoneLine2 {
+            color: white;
+			text-align: left;
+		}
+        
+        #stoneLine3 {
+            color: white;
+			text-align: left;
+		}
+        
+        #stoneLine4 {
+            color: white;
+			text-align: left;
+		}
+        
+        #stoneLine5 {
+            color: white;
+			text-align: left;
+		}
+        
+        #stoneLine6 {
+            color: white;
+			text-align: left;
+		}
+        
+        #stoneLine7 {
+            color: white;
+			text-align: left;
+		}
+		
+		#clay {
+			color: white;
+			position: absolute;
+			top: 60%;
+			left: 45%;
+            text-align: justify;
+            font-family: Andale Mono, monospace;
+            font-size: 0.8em;
+		}
+        
+        #clayLine1 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine2 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine3 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine4 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine5 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine6 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine7 {
+            color: white;
+			text-align: left;
+		}
+        
+        #clayLine8 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine9 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine10 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine11 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine12 {
+            color: white;
+			text-align: justify;
+		}
+        
+        #clayLine13 {
+            color: white;
+			text-align: left;
+		}
+        #clayLine14 {
+            color: white;
+			text-align: left;
+		}
+        
+        #blood {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+			text-align: center;
+            font-family: Andale Mono, monospace;
+            font-size: 0.8em;
+        }
+        #bloodLine1 {
+            color: white;
+			text-align: left;
+		}
+        
+        #cedar {
+            color: white;
+            position: absolute;
+            top: 30%;
+            left: 5%;
+			text-align: left;
+            font-family: Andale Mono, monospace;
+            font-size: 0.8em;
+        }
+        
+        #night {
+            color: white;
+            position: absolute;
+            top: 85%;
+            left: 10%;
+			text-align: left;
+            font-family: Andale Mono, monospace;
+            font-size: 0.8em;
+        }
+        
+        #storm {
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 75%;
+			text-align: left;
+            font-family: Andale Mono, monospace;
+            font-size: 0.8em;
+        }
+    </style>
+        
+    <script>
+        var shortDelay = 2000;
+        var midDelay = 4000;
+        var longDelay = 5000;
+        
+        var stone1 = "He who saw the deep &emsp; &emsp; king of ashlar king of ground king of clay [wisdom]";
+        var stone2 = "&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; of immortal stone."
+        var stone3 = "The STONE KING dug a hole in the floodplain &emsp; climbed down";
+        var stone4 = "&emsp; &emsp; &emsp; to the time before the flood and carried home a secret in a handful of dirt.";
+        var stone5 = "The stone king spoke a city of numbers &emsp; and it was so. &ensp; The stone king";
+        var stone6 = "spoke split mountains and the mountains wept wells. Spoke I am no shepherd";
+        var stone7 = "&emsp; and the pounding of hooves sang annihilation.";
+        var stone8 = "And the people spoke the stone king is a";
+        var stone9 = "&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 1. god";
+        var stone10 = "&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 2. god";
+        var stone11 = "&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 3. storm";
+        var stone12 = "&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; king of thirds";
+        var stone13 = "&emsp; and the streets of the city of numbers";
+        var stone14 = "&emsp;  &emsp; &ensp; ran red.";
+        
+        var clay1 = "Mother built the CLAY MAN on a pottery wheel. sweet boy";
+        var clay2 = "with a six-chambered heart &emsp; hair and wild and delight.";
+        var clay3 = "mighty as a rock from the sky. as an axe from heaven. If you";
+        var clay4 = "run through the hills long enough you might become them.";
+        var clay5 = "The stone king sent a gift for the clay man &emsp; pretty young thing.";
+        var clay6 = "body built of cities and the soft purr of hexadecimal";
+        var clay7 = "&emsp; &emsp; 7368616D686174";
+        var clay8 = "The gift did as she was told. opened legs made of the ordered";
+        var clay9 = "clamor of street markets and the clay man cut his tongue";
+        var clay10 = "on numbers. The rock from the sky turned to dust in the";
+        var clay11 = "sweet blood of cubits and livestock and irrigated ground";
+        var clay12 = "unfolding in sun-bleached lattices past every horizon.";
+        var clay13= "—";
+        var clay14= "and the pretty young thing sang a song of cities";
+        
+        var blood1 = "7468652073746f6e65206b696e6720647265616d6564206f6620626c6f6f64";
+        var blood2 = "636f6c6420626c6f6f6420737765657420626c6f6f6420636c617920626C6f6f64";
+        var blood3 = "74686520626c6f6f64206f662068697320656e656d696573";
+        var blood4 = "74686520626c6f6f64206f66206120667269656e64";
+        var blood5 = "7768656e2074686520636c6179206d616e2063616d6520746f2074686520";
+        var blood6 = "63697479206f66206e756d626572732c2073776f7264206f6620746865";
+        var blood7 = "676f64732c2074686520737472656574732077657074207465617273206f6620";
+        var blood8 = "73696c6b20616e642069726f6e";
+        var blood9 = "74686520626c6f6f64206f6620616e20656e656d79";
+        var blood10 = "74686520626c6f6f64206f66206120667269656e64";
+        var blood11 = "6c696b6520616e206178652066726f6d2068656176656e";
+        var blood12 = "68656c64206c696b652061207769666520";
+        
+	   function stone() {
+           var stoneAudio = document.getElementById("stoneAudio");
+           stoneAudio.play()
+           
+           setTimeout(function() {document.getElementById("stoneLine1").innerHTML = stone1}, 100);
+           setTimeout(function() {document.getElementById("stoneLine2").innerHTML = stone2}, shortDelay);
+           setTimeout(function() {document.getElementById("stoneLine1").innerHTML = stone3}, shortDelay + longDelay);
+           setTimeout(function() {document.getElementById("stoneLine2").innerHTML = stone4}, 2*shortDelay + longDelay);
+           setTimeout(function() {document.getElementById("stoneLine1").innerHTML = stone5}, 2*shortDelay + 2*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine2").innerHTML = stone6}, 3*shortDelay + 2*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine3").innerHTML = stone7}, 4*shortDelay + 2*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine1").innerHTML = stone8}, 4*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine2").innerHTML = stone9}, 5*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine3").innerHTML = stone10}, 5.5*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine4").innerHTML = stone11}, 6*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine5").innerHTML = stone12}, 7*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine6").innerHTML = stone13}, 8*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine7").innerHTML = stone14}, 9*shortDelay + 3*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine1").innerHTML = " "}, 4*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine2").innerHTML = " "}, 5*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine3").innerHTML = " "}, 5.5*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine4").innerHTML = " "}, 6*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine5").innerHTML = " "}, 7*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine6").innerHTML = " "}, 8*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine7").innerHTML = " "}, 9*shortDelay + 5*longDelay);
+           setTimeout(function() {document.getElementById("stoneLine1").innerHTML = "I &emsp; STONE"}, 10*shortDelay + 5*longDelay);
+	   }
+
+	   function clay() {
+           var clayAudio = document.getElementById("clayAudio");
+           clayAudio.play()
+           
+           setTimeout(function() {document.getElementById("clayLine1").innerHTML = clay1}, 100);
+           setTimeout(function() {document.getElementById("clayLine2").innerHTML = clay2}, midDelay);
+           setTimeout(function() {document.getElementById("clayLine3").innerHTML = clay3}, 2*midDelay);
+           setTimeout(function() {document.getElementById("clayLine4").innerHTML = clay4}, 3*midDelay);
+           setTimeout(function() {document.getElementById("clayLine5").innerHTML = clay5}, 4*midDelay);
+           setTimeout(function() {document.getElementById("clayLine6").innerHTML = clay6}, 5*midDelay);
+           setTimeout(function() {document.getElementById("clayLine7").innerHTML = clay7}, 6*midDelay);
+           setTimeout(function() {document.getElementById("clayLine8").innerHTML = clay8}, 7*midDelay);
+           setTimeout(function() {document.getElementById("clayLine9").innerHTML = clay9}, 8*midDelay);
+           setTimeout(function() {document.getElementById("clayLine10").innerHTML = clay10}, 9*midDelay);
+           setTimeout(function() {document.getElementById("clayLine11").innerHTML = clay11}, 10*midDelay);
+           setTimeout(function() {document.getElementById("clayLine12").innerHTML = clay12}, 11*midDelay);
+           setTimeout(function() {document.getElementById("clayLine13").innerHTML = clay13}, 12*midDelay);
+           setTimeout(function() {document.getElementById("clayLine14").innerHTML = clay14}, 13*midDelay);
+           setTimeout(function() {document.getElementById("clayLine1").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine2").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine3").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine4").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine5").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine6").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine7").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine8").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine9").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine10").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine11").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine12").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine13").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine14").innerHTML = " "}, 60000);
+           setTimeout(function() {document.getElementById("clayLine1").innerHTML = "II &emsp; CLAY"}, longDelay + 60000);
+           
+	   }
+        
+        function blood() {
+            var bloodAudio = document.getElementById("bloodAudio");
+            bloodAudio.play()
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood1}, 100);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood2}, midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood3}, 2*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood4}, 3*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood5}, 4*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood6}, 5*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood7}, 6*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood8}, 7*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = blood9}, 8*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = " "}, 9*midDelay);
+            setTimeout(function() {document.getElementById("bloodLine1").innerHTML = "III &emsp; BLOOD"}, shortDelay + 9*midDelay);
+        }
+        
+        function nodeScriptReplace(node) {
+                if ( nodeScriptIs(node) === true ) {
+                        node.parentNode.replaceChild( nodeScriptClone(node) , node );
+                }
+                else {
+                        var i = -1, children = node.childNodes;
+                        while ( ++i < children.length ) {
+                              nodeScriptReplace( children[i] );
+                        }
+                }
+
+                return node;
+        }
+        function nodeScriptClone(node){
+                var script  = document.createElement("script");
+                script.text = node.innerHTML;
+
+                var i = -1, attrs = node.attributes, attr;
+                while ( ++i < attrs.length ) {                                    
+                      script.setAttribute( (attr = attrs[i]).name, attr.value );
+                }
+                return script;
+        }
+
+        function nodeScriptIs(node) {
+                return node.tagName === 'SCRIPT';
+        }
+</script>
+</html>
