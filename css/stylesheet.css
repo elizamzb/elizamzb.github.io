@@ -1,12 +1,10 @@
 html,body {
-	font-family: Arial, sans-serif;
+	font-family: 'Inter Tight', sans-serif;
 	font-size: .9em;
     margin: 1em 0;
     background-color: white;
     color: black;
-	font-size: 24px;
-	font-weight: normal;
-	letter-spacing: .5px;
+	font-size: 20px;
     margin: 0px 8px 0px 8px;
 	line-height: 1.25;
 }
@@ -27,7 +25,8 @@ a:visited {
 }
 
 a:hover {
-    color: greenyellow;
+    color: white;
+    background-color: green;
 }
 
 .foot {
@@ -35,7 +34,7 @@ a:hover {
 }
 
 a:active {
-    color: greenyellow;
+    color: green;
 }
 
 a.highlight {
@@ -60,11 +59,15 @@ a.extra {
 	display: none;
 } 
 
-button {
+.button {
 	margin-bottom: 15px;
 	margin-left: -5px;
+    border: none;
+    color: white;
+    background-color: green;
+
 } 
 
 .button:hover {
-	background-color: white;
+	background-color: greenyellow;
 } 
