@@ -16,16 +16,16 @@ a {
 }
 
 a:link {
-    color: mediumseagreen;
+    color: seagreen;
 }
 
 a:visited {
-    color: mediumseagreen;
+    color: seagreen;
 }
 
 a:hover {
     color: white;
-    background-color: mediumseagreen;
+    background-color: seagreen;
 }
 
 .foot {
@@ -37,7 +37,7 @@ a:active {
 }
 
 a.highlight {
-	background-color: mediumseagreen;
+	background-color: seagreen;
 	color: white;
 }
 
