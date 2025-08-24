@@ -81,7 +81,7 @@ a.extra {
 } 
 
 @media (prefers-color-scheme: dark) {
-	body{
+	html,body{
 		background-color: black;
 		color: white;
 	}
