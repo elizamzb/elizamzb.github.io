@@ -1,4 +1,8 @@
-html,body {
+html {
+	background-color:none;
+}
+
+body {
 	font-family: 'Arial', sans-serif;
 	/* font-size: 1.5em;*/
     margin: .4rem .4rem;
@@ -59,32 +63,27 @@ a.extra {
 	color: fuchsia !important;
 }
 
-.more {
-	display: block;
-}
-
-.less {
-	display: none;
-} 
-
-.button {
+.btn {
 	margin-bottom: 15px;
 	margin-left: -5px;
+	font-size: 0.6rem;
     border: none;
-    color: white;
-    background-color: green;
+	cursor: pointer;
 
-} 
+	} 
 
-.button:hover {
-	background-color: greenyellow;
-} 
-
-@media (prefers-color-scheme: dark) {
-	html,body{
-		background-color: black;
-		color: white;
+	.click {
+		text-decoration-line: underline;
+    	color: black;
+    	background-color: white;
 	}
+
+	.btn:hover {
+		text-decoration: none; 
+	} 
+.dark-mode {
+	background-color: black;
+	color: white;
 
 	a {
     	color: white;
@@ -93,30 +92,39 @@ a.extra {
     	color: #8ec3eb;
 	}
 
-a:visited {
-    color: #8ec3eb;
-}
+	a:visited {
+    	color: #8ec3eb;
+	}
 
-a:hover {
-    color: white;
-    background-color: #8ec3eb;
-}
+	a:hover {
+	    color: white;
+	    background-color: #8ec3eb;
+	}
 
-.foot {
-	font-size: 12px;
-}
+	.foot {
+		font-size: .8em;
+	}
 
-a:active {
-    color: #8ec3eb;
-}
+	a:active {
+	    color: #8ec3eb;
+	}
 
-a.highlight {
-	color: #f6d8ac;
-}
+	a.highlight {
+		color: #f6d8ac;
+	}
 
-a.highlight:hover {
-	color: white;
-	background-color: #f6d8ac;
-}
-	
+	a.highlight:hover {
+		color: white;
+		background-color: #f6d8ac;
+	}
+
+	.click {
+		text-decoration-line: underline;
+    	color: white;
+    	background-color: black;
+	}
+
+	.btn:hover {
+		text-decoration: none; 
+	} 
 }
