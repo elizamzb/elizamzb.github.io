@@ -1,9 +1,10 @@
 html,body {
 	font-family: 'Arial', sans-serif;
-	font-size: 1rem;
+	/* font-size: 1.5em;*/
     margin: .4rem .4rem;
     background-color: white;
     color: black;
+	font-size: 1rem;
 	line-height: 1.25;
 }
 
@@ -19,7 +20,7 @@ a:link {
 }
 
 a:visited {
-    color: #8ec3eb;
+    color: #2a6592;
 }
 
 a:hover {
@@ -37,7 +38,6 @@ a:active {
 
 a.highlight {
 	color: #db9833;
-	background-color: white;
 }
 
 a.highlight:hover {
@@ -46,7 +46,7 @@ a.highlight:hover {
 }
 
 a.highlight:visited {
-    color: #f6d8ac;
+    color: #db9833;
 	background-color: white;
 }
 
