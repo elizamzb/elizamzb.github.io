@@ -1,10 +1,10 @@
 html,body {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Arial', sans-serif;
 	/* font-size: 1.5em;*/
-    margin: 4% 4%;
+    margin: 2% 2%;
     background-color: white;
     color: black;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.25;
 }
 
@@ -16,16 +16,16 @@ a {
 }
 
 a:link {
-    color: seagreen;
+    color: #2a6592;
 }
 
 a:visited {
-    color: seagreen;
+    color: #8ec3eb;
 }
 
 a:hover {
     color: white;
-    background-color: seagreen;
+    background-color: #2a6592;
 }
 
 .foot {
@@ -33,12 +33,22 @@ a:hover {
 }
 
 a:active {
-    color: seagreen;
+    color: #2a6592;
 }
 
 a.highlight {
-	background-color: seagreen;
-	color: white;
+	color: #db9833;
+	background-color: white;
+}
+
+a.highlight:hover {
+    color: white;
+    background-color: #db9833;
+}
+
+a.highlight:visited {
+    color: #f6d8ac;
+	background-color: white;
 }
 
 a.extra {
