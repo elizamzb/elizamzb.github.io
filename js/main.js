@@ -8,3 +8,15 @@ function darkLightMode() {
     buttonText.innerHTML = "dark mode";
   }
 } 
+
+function moreLess() {
+  var element = document.getElementById("moreOrLess");
+  var buttonText = document.getElementById("buttonTextMore")
+  if (element.style.display === "block") {
+    buttonText.innerHTML = "more";
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+    buttonText.innerHTML = "less";
+  }
+}
