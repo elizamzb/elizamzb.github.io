@@ -78,9 +78,21 @@ a.extra {
     	background-color: white;
 	}
 
+	.moreless {
+		text-decoration-line: underline;
+    	background-color: transparent;
+		color: black;
+    	background-color: white;
+	}
+
 	.btn:hover {
 		text-decoration: none; 
 	} 
+
+#moreOrLess {
+	display: none;
+}
+
 .dark-mode {
 	background-color: black;
 	color: white;
@@ -121,6 +133,13 @@ a.extra {
 	.click {
 		text-decoration-line: underline;
     	color: white;
+    	background-color: black;
+	}
+
+	.moreless {
+		text-decoration-line: underline;
+    	background-color: transparent;
+		color: white;
     	background-color: black;
 	}
 
