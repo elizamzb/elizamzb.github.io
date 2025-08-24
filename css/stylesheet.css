@@ -81,5 +81,42 @@ a.extra {
 } 
 
 @media (prefers-color-scheme: dark) {
+	body{
+		background-color: black;
+		color: white;
+	}
 
+	a {
+    	color: white;
+	}
+	a:link {
+    	color: #8ec3eb;
+	}
+
+a:visited {
+    color: #8ec3eb;
+}
+
+a:hover {
+    color: white;
+    background-color: #8ec3eb;
+}
+
+.foot {
+	font-size: 12px;
+}
+
+a:active {
+    color: #8ec3eb;
+}
+
+a.highlight {
+	color: #f6d8ac;
+}
+
+a.highlight:hover {
+	color: white;
+	background-color: #f6d8ac;
+}
+	
 }
