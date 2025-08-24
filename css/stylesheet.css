@@ -64,8 +64,7 @@ a.extra {
 }
 
 .btn {
-	margin-bottom: 15px;
-	margin-left: -5px;
+	margin-bottom: .6rem;
 	font-size: 0.6rem;
     border: none;
 	cursor: pointer;
