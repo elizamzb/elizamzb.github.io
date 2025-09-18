@@ -37,7 +37,7 @@ a:hover {
 }
 
 a:active {
-	color: #8ec3eb;
+	color: white;
 }
 
 a.highlight {
@@ -48,10 +48,6 @@ a.highlight:hover {
     color: white;
     background-color: #db9833;
 }
-
-a.highlight:visited {
-		color: #f6d8ac;
-	}
 
 a.extra {
 	background-color: #00ff00 !important; 
