@@ -49,6 +49,10 @@ a.highlight:hover {
     background-color: #db9833;
 }
 
+a.highlight:visited {
+		color: #f6d8ac;
+	}
+
 a.extra {
 	background-color: #00ff00 !important; 
 	color: black !important;
