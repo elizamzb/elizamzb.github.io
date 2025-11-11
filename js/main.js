@@ -10,13 +10,16 @@ function darkLightMode() {
 } 
 
 function moreLess() {
-  var element = document.getElementById("moreOrLess");
+  var less = document.getElementById("less");
+  var more = document.getElementById("more");
   var buttonText = document.getElementById("buttonTextMore")
-  if (element.style.display === "block") {
+  if (more.style.display === "block") {
     buttonText.innerHTML = "more";
-    element.style.display = "none";
+    less.style.display = "block";
+    more.style.display = "none";
   } else {
-    element.style.display = "block";
+    less.style.display = "none";
+    more.style.display = "block";
     buttonText.innerHTML = "less";
   }
 }
