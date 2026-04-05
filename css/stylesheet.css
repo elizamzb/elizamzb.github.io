@@ -28,9 +28,11 @@ a:link {
     font-style: italic;
 }
 
+/*
 a:visited {
     color: #818b70;
 }
+*/
 
 a:hover {
     color: white;
